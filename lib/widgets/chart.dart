@@ -33,6 +33,7 @@ class _ChartState extends State<Chart> {
             tooltipBehavior: _tooltipBehavior,
             series: <SplineSeries<SalesData, String>>[
               SplineSeries<SalesData, String>(
+                name: 'scale',
                 dataSource: _chartData,
                 yValueMapper: (SalesData sales, _) => sales.sales,
                 xValueMapper: (SalesData sales, _) => sales.years,
